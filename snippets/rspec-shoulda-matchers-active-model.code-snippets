@@ -37,7 +37,7 @@
     ]
   },
   "validate_length_of:minimum": {
-    "prefix": "!validate_length_of",
+    "prefix": "!validate_length_of:minimum",
     "description": "tests usage of validates_length_of",
     "body": "it { is_expected.to validate_length_of(:$1).is_at_least($2).is_at_most($0) }"
   },

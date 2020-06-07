@@ -48,7 +48,7 @@
     ]
   },
   "Expectation with mock" : {
-    "prefix": "!expect-mock",
+    "prefix": "!expect:mock-return",
     "description": "Rspec expectition with mock",
     "body": [
       "expect($1)",
@@ -59,7 +59,7 @@
     ]
   },
   "Expectation" : {
-    "prefix": "!expect",
+    "prefix": "!expect:mock",
     "description": "Rspec expectition",
     "body": [
       "expect($1)",
@@ -69,15 +69,15 @@
     ]
   },
   "Expectation minimum" : {
-    "prefix": "!expect-minimum",
+    "prefix": "!expect:minimum",
     "description": "Rspec expectition minimum",
     "body": [
       "expect($1).to receive(:$0)",
     ]
   },
-  "expect execution block": {
-    "prefix": "!expect-execution-block",
-    "description": "Rspec expect execution block",
+  "expect execution inline": {
+    "prefix": "!expect:execution-inline",
+    "description": "Rspec expect execution inline expect { }.to",
     "body": "expect { $1 }.to change { $2 }.$0"
   },
   "Let": {

@@ -1,37 +1,42 @@
 {
-    "name": "vsc-rspec",
-    "displayName": "Rspec snippets for Ruby and Rais",
-    "description": "Rspec snippets from rspec core, rspec-its, shoulda-matchers and more on the way.",
-    "version": "0.0.2",
-    "publisher": "Saimon",
-    "homepage": "https://github.com/SaimonL/vsc-rspec",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/SaimonL/vsc-rspec"
-    },
-    "markdown": "github",
-    "readme": "https://github.com/SaimonL/vsc-rspec/blob/master/README.md",
-    "icon": "icon.png",
-    "engines": {
-        "vscode": "^1.45.0"
-    },
-    "categories": [
-        "Snippets"
-    ],
-    "contributes": {
-        "snippets": [
-            {
-                "language": "ruby",
-                "path": "./snippets/rspec.code-snippets"
-            },
-            {
-                "language": "ruby",
-                "path": "./snippets.rspec-shoulda-matchers-active-model.code-snippets"
-            },
-            {
-                "language": "ruby",
-                "path": "./snippets/rspec-its.code-snippets"
-            }
-        ]
-    }
+	"name": "vsc-rspec",
+	"displayName": "Rspec snippets for Ruby and Rais",
+	"description": "Rspec snippets from rspec core, rspec-its, shoulda-matchers and more on the way.",
+	"version": "0.0.2",
+	"publisher": "Saimon",
+	"homepage": "https://github.com/SaimonL/vsc-rspec",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SaimonL/vsc-rspec"
+	},
+	"markdown": "github",
+	"readme": "https://github.com/SaimonL/vsc-rspec/blob/master/README.md",
+	"icon": "icon.png",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "ruby",
+				"path": "./snippets/rspec.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets.rspec-shoulda-matchers-active-model.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/rspec-its.code-snippets"
+			}
+		]
+	},
+	"__metadata": {
+		"id": "075c4b63-abfe-47ca-a57e-b5c80593c298",
+		"publisherDisplayName": "Saimon",
+		"publisherId": "68fb3ed6-55eb-4153-b636-daecaebd4391"
+	}
 }
