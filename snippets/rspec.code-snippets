@@ -1,6 +1,6 @@
 {
   "New Rails RSPEC file": {
-    "prefix": "!new-rails-rspec-file",
+    "prefix": "rspec-new-rails-file",
     "description": "Rails new rspec file",
     "body": [
       "# frozen_string_literal: true",
@@ -19,7 +19,7 @@
     ]
   },
   "New RSPEC file": {
-    "prefix": "!new-rspec-file",
+    "prefix": "rspec-new-file",
     "description": "New rspec file",
     "body": [
       "# frozen_string_literal: true",
@@ -37,7 +37,7 @@
     ]
   },
   "New shared examples": {
-    "prefix": "!new-shared-example",
+    "prefix": "rspec-new-shared-example",
     "description": "New rspec shared example file",
     "body": [
       "RSpec.shared_examples '$1' do",
@@ -47,8 +47,65 @@
       "end"
     ]
   },
+  "New shared context": {
+    "prefix": "rspec-new-shared-context",
+    "description": "New rspec shared context file",
+    "body": [
+      "RSpec.shared_context '$TM_FILENAME' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "It behaves like": {
+    "prefix": "rspec-it_behaves_like",
+    "description": "it_behaves_like shared examples",
+    "body": "it_behaves_like '$0'"
+  },
+  "Include context": {
+    "prefix": "rspec-include_context",
+    "description": "include_context shared context",
+    "body": "include_context '$0'"
+  },
+  "Describe block": {
+    "prefix": "rspec-describe-block",
+    "description": "Describe block",
+    "body": [
+      "describe '$1' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "Context block": {
+    "prefix": "rspec-context-block",
+    "description": "Context block",
+    "body": [
+      "context '$1' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "It block": {
+    "prefix": "rspec-it-block",
+    "description": "Rspec it block",
+    "body": [
+      "it '$1' do",
+      "  expect($2).to $0",
+      "end"
+    ]
+  },
+  "It inline": {
+    "prefix": "rspec-it-inline",
+    "description": "One liner it that uses subject",
+    "body": "it { is_expected.to $0 }"
+  },
   "Expectation with mock" : {
-    "prefix": "!rspec-expect:mock-return",
+    "prefix": "rspec-expect:mock-return",
     "description": "Rspec expectition with mock",
     "body": [
       "expect($1)",
@@ -59,7 +116,7 @@
     ]
   },
   "Expectation" : {
-    "prefix": "!rspec-expect:mock",
+    "prefix": "rspec-expect:mock",
     "description": "Rspec expectition",
     "body": [
       "expect($1)",
@@ -68,71 +125,30 @@
       "  .with($0)"
     ]
   },
+  "expect execution inline": {
+    "prefix": "rspec-expect:execution-inline",
+    "description": "Rspec expect execution inline expect { }.to",
+    "body": "expect { $1 }.to change { $2 }.$0"
+  },
   "Expectation minimum" : {
-    "prefix": "!rspec-expect:minimum",
+    "prefix": "rspec-expect:mock-minimum",
     "description": "Rspec expectition minimum",
     "body": [
       "expect($1).to receive(:$0)",
     ]
   },
-  "expect execution inline": {
-    "prefix": "!rspec-expect:execution-inline",
-    "description": "Rspec expect execution inline expect { }.to",
-    "body": "expect { $1 }.to change { $2 }.$0"
-  },
   "Let": {
-    "prefix": "!rspec-let",
+    "prefix": "rspec-let",
     "description": "Let declaration",
     "body": "let(:$1) { $0 }"
   },
-  "Context": {
-    "prefix": "!rspec-context-block",
-    "description": "Context block",
-    "body": [
-      "context '$1' do",
-      "",
-      "  $0",
-      "",
-      "end"
-    ]
-  },
-  "Describe": {
-    "prefix": "!rspec-describe-block",
-    "description": "Describe block",
-    "body": [
-      "describe '$1' do",
-      "",
-      "  $0",
-      "",
-      "end"
-    ]
-  },
-  "It block": {
-    "prefix": "!rspec-it-block",
-    "description": "Rspec it block",
-    "body": [
-      "it '$1' do",
-      "  expect($2).to $0",
-      "end"
-    ]
-  },
-  "It inline": {
-    "prefix": "!rspec-it-inline",
-    "description": "One liner it that uses subject",
-    "body": "it { is_expected.to $0 }"
-  },
-  "It behaves like": {
-    "prefix": "!rspec-it_behaves_like",
-    "description": "it_behaves_like shared examples",
-    "body": "it_behaves_like '$0'"
-  },
   "be_truthy": {
-    "prefix": "!rspec-truthy",
+    "prefix": "rspec-truthy",
     "description": "be_truthy",
     "body": "be_truthy"
   },
   "be_falsy": {
-    "prefix": "!rspec-falsy",
+    "prefix": "rspec-falsy",
     "description": "be_falsy",
     "body": "be_falsy"
   }

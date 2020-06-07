@@ -1,36 +1,36 @@
 {
   "belongs_to": {
-    "prefix": "!rspec-belongs_to",
+    "prefix": "rspec-belongs_to",
     "description": "tests usage for belong_to",
     "body": "it { is_expected.to belong_to(:$0) }"
   },
   "belongs_to with where": {
-    "prefix": "!rspec-belongs_to:where",
+    "prefix": "rspec-belongs_to:where",
     "description": "tests usage for belong_to with where association",
     "body": "it { is_expected.to belong_to(:$1).conditions($2: $0) }"
   },
   "belongs_to with class_name": {
-    "prefix": "!rspec-belongs_to:class_name",
+    "prefix": "rspec-belongs_to:class_name",
     "description": "tests usage for belong_to with class_name association",
     "body": "it { is_expected.to belong_to(:$1).class_name('$0') }"
   },
   "belongs_to with primary_key": {
-    "prefix": "!rspec-belongs_to:primary_key",
+    "prefix": "rspec-belongs_to:primary_key",
     "description": "tests usage for belong_to with primary_key association",
     "body": "it { is_expected.to belong_to(:$1).with_primary_key('$0') }"
   },
   "belongs_to with foreign_key": {
-    "prefix": "!rspec-belongs_to:foreign_key",
+    "prefix": "rspec-belongs_to:foreign_key",
     "description": "tests usage for belong_to with foreign_key association",
     "body": "it { is_expected.to belong_to(:$1).with_foreign_key('$0') }"
   },
   "belongs_to with dependent": {
-    "prefix": "!rspec-belongs_to:dependent",
+    "prefix": "rspec-belongs_to:dependent",
     "description": "tests usage for belong_to with dependent constrain",
     "body": "it { is_expected.to belong_to(:$1).dependent(${0::destroy}) }"
   },
   "belongs_to all": {
-    "prefix": "!rspec-belongs_to:all",
+    "prefix": "rspec-belongs_to:all",
     "description": "tests usage for belong_to with all common combinations where you delete the one you don't need",
     "body": [
       "it do",

@@ -11,3 +11,6 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 
 - refactor
 - update documents
+- change mapping
+- added belongs_to
+- added rspec context

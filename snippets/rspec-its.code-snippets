@@ -1,21 +1,21 @@
 {
   "its(:size)": {
-    "prefix": "!rspec-its(:size)",
+    "prefix": "rspec-its(:size)",
     "description": "Check the size of the hash",
     "body": "its(:size) { is_expected.to eq($0) }"
   },
   "its(:keys)": {
-    "prefix": "!rspec-its(:keys)",
+    "prefix": "rspec-its(:keys)",
     "description": "Check all key names only",
     "body": "its(:keys) { are_expected.to eq([:$1, :$0]) }"
   },
   "its([:key])": {
-    "prefix": "!rspec-its([:key])",
+    "prefix": "rspec-its([:key])",
     "description": "Check hash key value",
     "body": "its([:key]) { is_expected.to eq($0) }"
   },
   "its([:key1, :key2])": {
-    "prefix": "!rspec-its([:key1, :key2])",
+    "prefix": "rspec-its([:key1, :key2])",
     "description": "subject { {key1: {key2: 3} } } | its([:key1, :key2]) { is_expected.to eq(3) }",
     "body": "its([:$1, :$2]) { is_expected.to eq($0) }"
   }
