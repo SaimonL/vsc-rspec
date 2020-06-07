@@ -1,8 +1,12 @@
 {
     "name": "vsc-rspec",
-    "displayName": "vsc-rspec",
-    "description": "VSC Rspec",
+    "displayName": "Rspec Snippets for ruby and rais",
+    "description": "Rspec snippets for ruby and rails",
     "version": "0.0.1",
+    "publisher": "Saimon Lovell",
+    "homepage": "https://github.com/SaimonL/vsc-rspec",
+    "markdown": "github",
+    "readme": "https://github.com/SaimonL/vsc-rspec/blob/master/README.md",
     "icon": "icon.png",
     "engines": {
         "vscode": "^1.45.0"
