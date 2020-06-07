@@ -39,6 +39,10 @@
 			{
 				"language": "ruby",
 				"path": "./snippets/rspec-sm-ar-has_many.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/rspec-sm-ar-have_one.code-snippets"
 			}
 		]
 	},
