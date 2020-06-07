@@ -6,7 +6,7 @@ A simple rspec snippets to make life easier.
 
 ### Core
 `!new-rails-rspec-file` : Rails standard new spec file template.  
-`!new-rspec-file` : New spec file template. 
+`!new-rspec-file` : New spec file template.  
 `!new-shared-example` : New rspec shared example file  
 `!it_behaves_like` : it_behaves_like shared examples  
   
