@@ -1,0 +1,47 @@
+{
+  "has_one": {
+    "prefix": "rspec-has_one",
+    "description": "tests usage for have_one",
+    "body": "it { is_expected.to have_one(:$0) }"
+  },
+  "has_one conditions": {
+    "prefix": "rspec-has_one:conditions",
+    "description": "tests usage for have_one with conditions",
+    "body": "it { is_expected.to have_one(:$1).conditions($2: '$0') }"
+  },
+  "has_one class_name": {
+    "prefix": "rspec-has_one:class_name",
+    "description": "tests usage for have_one with class name",
+    "body": "it { is_expected.to have_one(:$1).class_name('$0') }"
+  },
+  "has_one with_primary_key": {
+    "prefix": "rspec-has_one:with_primary_key",
+    "description": "tests usage for have_one with with_primary_key",
+    "body": "it { is_expected.to have_one(:$1).with_primary_key('$0') }"
+  },
+  "has_one with_foreign_key": {
+    "prefix": "rspec-has_one:with_foreign_key",
+    "description": "tests usage for have_one with with_foreign_key",
+    "body": "it { is_expected.to have_one(:$1).with_foreign_key('$0') }"
+  },
+  "has_one dependent": {
+    "prefix": "rspec-has_one:dependent",
+    "description": "tests usage for have_one with dependent",
+    "body": "it { is_expected.to have_one(:$1).dependent(${0::destroy}') }"
+  },
+  "has_one through": {
+    "prefix": "rspec-has_one:through",
+    "description": "tests usage for have_one with through",
+    "body": "it { is_expected.to have_one(:$1).through(:$0) }"
+  },
+  "has_one through, source": {
+    "prefix": "rspec-has_one:through-source",
+    "description": "tests usage for have_one with through and source",
+    "body": "it { is_expected.to have_one(:$1).through(:$2).source(:$0) }"
+  },
+  "has_one inverse_of": {
+    "prefix": "rspec-has_one:inverse_of",
+    "description": "tests usage for have_one with inverse_of",
+    "body": "it { is_expected.to have_one(:$1).inverse_of(:$0) }"
+  }
+}
