@@ -1,7 +1,7 @@
 {
     "name": "vsc-rspec",
     "displayName": "vsc-rspec",
-    "description": "Saimon Rspec",
+    "description": "VSC Rspec",
     "version": "0.0.1",
     "icon": "icon.png",
     "engines": {

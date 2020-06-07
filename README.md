@@ -1,4 +1,4 @@
-# saimon-rspec
+# VSC Rspec
 
 A simple rspec snippets to make life easier.
 
@@ -15,11 +15,11 @@ A simple rspec snippets to make life easier.
 
 ## Release Notes
 
-Users appreciate release notes as you update your extension.
+For changelog see (Gitgub Link)[https://github.com/SaimonL/vsc-rspec/blob/master/CHANGELOG.md]
 
 ### 0.0.1
 
-Initial release of Saimon Rspec
+Initial release of VSC Rspec
 
 
 **Enjoy!**
