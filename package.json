@@ -26,7 +26,11 @@
 			},
 			{
 				"language": "ruby",
-				"path": "./snippets.rspec-shoulda-matchers-active-model.code-snippets"
+				"path": "./snippets/rspec-sm-am.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/rspec-sm-ar-belong_to.code-snippets"
 			},
 			{
 				"language": "ruby",

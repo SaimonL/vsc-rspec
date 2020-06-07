@@ -48,7 +48,7 @@
     ]
   },
   "Expectation with mock" : {
-    "prefix": "!expect:mock-return",
+    "prefix": "!rspec-expect:mock-return",
     "description": "Rspec expectition with mock",
     "body": [
       "expect($1)",
@@ -59,7 +59,7 @@
     ]
   },
   "Expectation" : {
-    "prefix": "!expect:mock",
+    "prefix": "!rspec-expect:mock",
     "description": "Rspec expectition",
     "body": [
       "expect($1)",
@@ -69,24 +69,24 @@
     ]
   },
   "Expectation minimum" : {
-    "prefix": "!expect:minimum",
+    "prefix": "!rspec-expect:minimum",
     "description": "Rspec expectition minimum",
     "body": [
       "expect($1).to receive(:$0)",
     ]
   },
   "expect execution inline": {
-    "prefix": "!expect:execution-inline",
+    "prefix": "!rspec-expect:execution-inline",
     "description": "Rspec expect execution inline expect { }.to",
     "body": "expect { $1 }.to change { $2 }.$0"
   },
   "Let": {
-    "prefix": "!let",
+    "prefix": "!rspec-let",
     "description": "Let declaration",
     "body": "let(:$1) { $0 }"
   },
   "Context": {
-    "prefix": "!context-block",
+    "prefix": "!rspec-context-block",
     "description": "Context block",
     "body": [
       "context '$1' do",
@@ -97,7 +97,7 @@
     ]
   },
   "Describe": {
-    "prefix": "!describe-block",
+    "prefix": "!rspec-describe-block",
     "description": "Describe block",
     "body": [
       "describe '$1' do",
@@ -108,7 +108,7 @@
     ]
   },
   "It block": {
-    "prefix": "!it-block",
+    "prefix": "!rspec-it-block",
     "description": "Rspec it block",
     "body": [
       "it '$1' do",
@@ -117,22 +117,22 @@
     ]
   },
   "It inline": {
-    "prefix": "!it-inline",
+    "prefix": "!rspec-it-inline",
     "description": "One liner it that uses subject",
     "body": "it { is_expected.to $0 }"
   },
   "It behaves like": {
-    "prefix": "!it_behaves_like",
+    "prefix": "!rspec-it_behaves_like",
     "description": "it_behaves_like shared examples",
     "body": "it_behaves_like '$0'"
   },
   "be_truthy": {
-    "prefix": "!truthy",
+    "prefix": "!rspec-truthy",
     "description": "be_truthy",
     "body": "be_truthy"
   },
   "be_falsy": {
-    "prefix": "!falsy",
+    "prefix": "!rspec-falsy",
     "description": "be_falsy",
     "body": "be_falsy"
   }
