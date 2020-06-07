@@ -1,0 +1,29 @@
+{
+    "name": "vsc-rspec",
+    "displayName": "vsc-rspec",
+    "description": "Saimon Rspec",
+    "version": "0.0.1",
+    "icon": "icon.png",
+    "engines": {
+        "vscode": "^1.45.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "ruby",
+                "path": "./snippets/rspec.code-snippets"
+            },
+            {
+                "language": "ruby",
+                "path": "./snippets.rspec-shoulda-matchers-active-model.code-snippets"
+            },
+            {
+                "language": "ruby",
+                "path": "./snippets/rspec-its.code-snippets"
+            }
+        ]
+    }
+}

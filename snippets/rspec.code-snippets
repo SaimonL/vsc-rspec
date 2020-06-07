@@ -1,0 +1,139 @@
+{
+  "New Rails RSPEC file": {
+    "prefix": "!new-rails-rspec-file",
+    "description": "Rails new rspec file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe $TM_FILENAME, type: $1 do",
+      "  let(:$TM_FILENAME) { described_class.new() }",
+      "",
+      "  subject { $TM_FILENAME }",
+      "",
+      "  $0",
+      "",
+      "end", 
+      ""
+    ]
+  },
+  "New RSPEC file": {
+    "prefix": "!new-rspec-file",
+    "description": "New rspec file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe $TM_FILENAME do",
+      "",
+      "  subject { $1 }",
+      "",
+      "  $0",
+      "",
+      "end", 
+      ""
+    ]
+  },
+  "New shared examples": {
+    "prefix": "!new-shared-example",
+    "description": "New rspec shared example file",
+    "body": [
+      "RSpec.shared_examples '$1' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "Expectation with mock" : {
+    "prefix": "!expect-mock",
+    "description": "Rspec expectition with mock",
+    "body": [
+      "expect($1)",
+      "  .to receive(:$2)",
+      "  .at_least($3).time",
+      "  .with(${4:no_args})",
+      "  .and_return($0)"
+    ]
+  },
+  "Expectation" : {
+    "prefix": "!expect",
+    "description": "Rspec expectition",
+    "body": [
+      "expect($1)",
+      "  .to receive(:$2)",
+      "  .at_least($3).time",
+      "  .with($0)"
+    ]
+  },
+  "Expectation minimum" : {
+    "prefix": "!expect-minimum",
+    "description": "Rspec expectition minimum",
+    "body": [
+      "expect($1).to receive(:$0)",
+    ]
+  },
+  "expect execution block": {
+    "prefix": "!expect-execution-block",
+    "description": "Rspec expect execution block",
+    "body": "expect { $1 }.to change { $2 }.$0"
+  },
+  "Let": {
+    "prefix": "!let",
+    "description": "Let declaration",
+    "body": "let(:$1) { $0 }"
+  },
+  "Context": {
+    "prefix": "!context-block",
+    "description": "Context block",
+    "body": [
+      "context '$1' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "Describe": {
+    "prefix": "!describe-block",
+    "description": "Describe block",
+    "body": [
+      "describe '$1' do",
+      "",
+      "  $0",
+      "",
+      "end"
+    ]
+  },
+  "It block": {
+    "prefix": "!it-block",
+    "description": "Rspec it block",
+    "body": [
+      "it '$1' do",
+      "  expect($2).to $0",
+      "end"
+    ]
+  },
+  "It inline": {
+    "prefix": "!it-inline",
+    "description": "One liner it that uses subject",
+    "body": "it { is_expected.to $0 }"
+  },
+  "It behaves like": {
+    "prefix": "!it_behaves_like",
+    "description": "it_behaves_like shared examples",
+    "body": "it_behaves_like '$0'"
+  },
+  "be_truthy": {
+    "prefix": "!truthy",
+    "description": "be_truthy",
+    "body": "be_truthy"
+  },
+  "be_falsy": {
+    "prefix": "!falsy",
+    "description": "be_falsy",
+    "body": "be_falsy"
+  }
+}
