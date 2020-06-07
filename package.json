@@ -2,7 +2,7 @@
 	"name": "vsc-rspec",
 	"displayName": "Rspec snippets for Ruby and Rais",
 	"description": "Rspec snippets from rspec core, rspec-its, shoulda-matchers and more on the way.",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"publisher": "Saimon",
 	"homepage": "https://github.com/SaimonL/vsc-rspec",
 	"repository": {
@@ -35,6 +35,10 @@
 			{
 				"language": "ruby",
 				"path": "./snippets/rspec-its.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "./snippets/rspec-sm-ar-has_many.code-snippets"
 			}
 		]
 	},

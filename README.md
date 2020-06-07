@@ -48,6 +48,7 @@ A simple rspec snippets to make life easier.
 #### Active Record
 
 `rspec-belongs_to` : Tests usage of belongs_to  
+`rspec-has_many` : Tests usage of has_many  
 
 
 ## Release Notes
