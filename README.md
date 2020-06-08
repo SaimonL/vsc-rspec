@@ -49,6 +49,7 @@ A simple rspec snippets to make life easier.
 
 `rspec-belongs_to` : Tests usage of belongs_to  
 `rspec-has_many` : Tests usage of has_many  
+`rspec-have_one` : Tests usage of have_one  
 
 
 ## Release Notes

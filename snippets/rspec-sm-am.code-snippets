@@ -41,8 +41,8 @@
     "description": "tests usage of validates_length_of",
     "body": "it { is_expected.to validate_length_of(:$1).is_at_least($2).is_at_most($0) }"
   },
-  "validate_numericality_of ": {
-    "prefix": "rspec-validate_numericality_of ",
+  "validate_numericality_of": {
+    "prefix": "rspec-validate_numericality_of",
     "description": "tests usage of validates_numericality_of",
     "body": [
       "it do",
@@ -60,8 +60,13 @@
     ]
   },
   "validate_presence_of": {
-    "prefix": "rspec-validate_presence_of ",
+    "prefix": "rspec-validate_presence_of",
     "description": "tests usage of validates_presence_of",
     "body": "it { is_expected.to validate_presence_of(:$0).allow_nil }"
+  },
+  "validate_uniqueness_of": {
+    "prefix": "rspec-validate_uniqueness_of",
+    "description": "tests usage of validate_uniqueness_of",
+    "body": "it { is_expected.to validate_uniqueness_of(:$1).scoped_to(:$2).ignoring_case_sensitivity.allow_nil }"
   }
 }
