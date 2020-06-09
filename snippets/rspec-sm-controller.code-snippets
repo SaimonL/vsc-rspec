@@ -1,0 +1,40 @@
+{
+  "Controlle permit": {
+    "prefix": "rspec-permit",
+    "description": "tests controller permit",
+    "body": [
+      "it do",
+      "  is_expected",
+      "    .to permit(:$1)",
+      "    .for(:create, params: params)",
+      "    .on(:$0)",
+      "end"
+    ]
+  },
+  "Controller redirect": {
+    "prefix": "rspec-redirect",
+    "description": "test controller redirect",
+    "body": "it { is_expected.to redirect_to(posts_path) }"
+  },
+  "Controller render template": {
+    "prefix": "rspec-render-template",
+    "description": "test controller render template",
+    "body": "it { is_expected.to render_template('show') }"
+  },
+  "Controller render partial": {
+    "prefix": "rspec-render-partial",
+    "description": "test controller render partial",
+    "body": "it { is_expected.to render_template(partial: '_post') }"
+  },
+  "Controller respond with": {
+    "prefix": "rspec-respond-with",
+    "description": "test controller respond with",
+    "body": "it { is_expected.to respond_with(:ok) }"
+  },
+  "route": {
+    "prefix": "rspec-route",
+    "description": "test route",
+    "body": "it { expect route(:get, '/posts/1').to(action: :show, id: 1) }"
+  },
+  
+}
