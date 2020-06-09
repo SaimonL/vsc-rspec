@@ -19,3 +19,4 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 
 - added has_many
 - added have_one
+- file name fix
