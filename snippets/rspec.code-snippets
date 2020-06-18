@@ -106,13 +106,23 @@
   },
   "Expectation with mock" : {
     "prefix": "rspec-expect:mock-return",
-    "description": "Rspec expectition with mock",
+    "description": "Rspec expectition with mock return",
     "body": [
       "expect($1)",
       "  .to receive(:$2)",
       "  .at_least($3).time",
       "  .with(${4:no_args})",
       "  .and_return($0)"
+    ]
+  },
+  "Expectation exception with mock" : {
+    "prefix": "rspec-expect:mock-exception-return",
+    "description": "Rspec expectition with mock exception return",
+    "body": [
+      "expect($1)",
+      "  .to receive(:$2)",
+      "  .at_least($3).time",
+      "  .and_raise(StandardError.new('$0'))"
     ]
   },
   "Expectation" : {
