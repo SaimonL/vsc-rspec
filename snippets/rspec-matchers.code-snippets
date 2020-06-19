@@ -43,6 +43,39 @@
     "body": "it { is_expected.to match(/$0/) }"
   },
 
+  "Rspec Array have things": {
+    "prefix": "rspec-array:have-things",
+    "description": "Test array have things",
+    "body": "expect([$1]).to have(${0:1}).things"
+  },
+  "Rspec Array have things (inline)": {
+    "prefix": "rspec-array-inline:have-things",
+    "description": "Test array have things",
+    "body": "it { is_expected.to have(${0:1}).things }"
+  },
+
+  "Rspec Array have at least n things": {
+    "prefix": "rspec-array:have_at_least.things",
+    "description": "Test array have at least n things",
+    "body": "expect([$1]).to have_at_least.things(${0:2}).things"
+  },
+  "Rspec Array have at least n things (inline)": {
+    "prefix": "rspec-array-inline:have_at_least",
+    "description": "Test array have at least n things",
+    "body": "it { is_expected.to have_at_least(${0:2}).things }"
+  },
+
+  "Rspec Array have at most n things": {
+    "prefix": "rspec-array:have_at_most.things",
+    "description": "Test array have at most n things",
+    "body": "expect([$1]).to have_at_most.things(${0:4}).things"
+  },
+  "Rspec Array have at most n things (inline)": {
+    "prefix": "rspec-array-inline:have_at_most",
+    "description": "Test array have at most n things",
+    "body": "it { is_expected.to have_at_most(${0:4}).things }"
+  },
+
   "Rspec Array include": {
     "prefix": "rspec-array:include",
     "description": "Test array inclusion",
