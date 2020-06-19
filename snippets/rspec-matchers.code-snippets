@@ -53,6 +53,28 @@
     "description": "Test array inclusion",
     "body": "it { is_expected.to include($1, $0) }"
   },
+
+  "Rspec Array all be_even": {
+    "prefix": "rspec-array:all be_even",
+    "description": "Test array where all elements be_even",
+    "body": "expect([$1, $2]).to all(be_even)"
+  },
+  "Rspec Array all be_even (inline)": {
+    "prefix": "rspec-array-inline:all be_even",
+    "description": "Test array where all elements be_even",
+    "body": "it { is_expected.to all(be_even) }"
+  },
+
+  "Rspec Array all be kind of": {
+    "prefix": "rspec-array:all be kind of",
+    "description": "Test array where all elements be kind of",
+    "body": "expect([$1, $2]).to all(be_kind_of(${3:Integer}).and be > $0)"
+  },
+  "Rspec Array all be kind of (inline)": {
+    "prefix": "rspec-array-inline:all be kind of",
+    "description": "Test array where all elements be kind of",
+    "body": "it { is_expected.to all(be_kind_of(${3:Integer}).and be > $0) }"
+  },
   
   "Rspec Array contain_exactly": {
     "prefix": "rspec-array:contain_exactly",
