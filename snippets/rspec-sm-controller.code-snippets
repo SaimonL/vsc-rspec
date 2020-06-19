@@ -30,11 +30,5 @@
     "prefix": "rspec-respond-with",
     "description": "test controller respond with",
     "body": "it { is_expected.to respond_with(:ok) }"
-  },
-  "route": {
-    "prefix": "rspec-route",
-    "description": "test route",
-    "body": "it { expect route(:get, '/posts/1').to(action: :show, id: 1) }"
-  },
-  
+  } 
 }

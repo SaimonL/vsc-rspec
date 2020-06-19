@@ -37,20 +37,29 @@ A simple rspec snippets to make life easier.
 
 #### Active Model
 
-`rspec-validate_absence_of` : Tests usage of validates_absence_of  
-`rspec-validate_acceptance_of` : Tests usage of validates_acceptance_of  
-`rspec-validate_confirmation_of` : Tests usage of validates_confirmation_of  
-`rspec-validate_inclusion_of` : Tests usage of validates_inclusion_of  
-`rspec-validate_length_of` : Tests usage of validates_length_of  
-`rspec-validate_numericality_of` : Tests usage of validates_numericality_of  
-`rspec-validate_presence_of` : Tests usage of validates_presence_of  
+`rspec-validate_absence_of` : Test usage of validates_absence_of  
+`rspec-validate_acceptance_of` : Test usage of validates_acceptance_of  
+`rspec-validate_confirmation_of` : Test usage of validates_confirmation_of  
+`rspec-validate_inclusion_of` : Test usage of validates_inclusion_of  
+`rspec-validate_length_of` : Test usage of validates_length_of  
+`rspec-validate_numericality_of` : Test usage of validates_numericality_of  
+`rspec-validate_presence_of` : Test usage of validates_presence_of  
 
 #### Active Record
 
-`rspec-belongs_to` : Tests usage of belongs_to  
-`rspec-has_many` : Tests usage of has_many  
-`rspec-have_one` : Tests usage of have_one  
+`rspec-belongs_to` : Test usage of belongs_to  
+`rspec-has_many` : Test usage of has_many  
+`rspec-have_one` : Test usage of have_one  
 
+#### Controller & Route
+
+`rspec-permit` : Test controller params
+`rspec-redirect` : Test redirect
+`rspec-route` : Test routing
+`rspec-render-template` : Test render template
+`rspec-render-partial` : Test partial template
+`rspec-respond-with` : Test http status code
+`rspec-check-session` : Test session
 
 ## Release Notes
 

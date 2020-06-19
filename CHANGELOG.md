@@ -21,3 +21,9 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 - added have_one
 - file name fix
 - added expectation return raise mock
+
+## [0.0.4]
+
+- added controller test
+- added route test
+- added session test
