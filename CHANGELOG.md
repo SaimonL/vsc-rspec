@@ -27,3 +27,8 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 - added controller test
 - added route test
 - added session test
+- added rspec matchers
+- added string matchers
+- added hash matchers
+- added array matchers
+- added exception matchers

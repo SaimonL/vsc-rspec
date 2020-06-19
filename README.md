@@ -26,6 +26,12 @@ A simple rspec snippets to make life easier.
 `rspec-truthy` : be_truthy shortcut  
 `rspec-falsy` : be_falsy shortcut  
 
+`rspec-string` : Test string
+`rspec-array` : Test Array
+`rspec-hash` : Test Hash
+`rspec-numeric` : Test Numbers
+`rspec-exception` : Test Exceptions
+
 ### ITS
 
 `rspec-its(:size)` : Check the size of the hash  

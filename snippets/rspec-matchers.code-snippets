@@ -1,0 +1,155 @@
+{
+  "Rspec String include": {
+    "prefix": "rspec-string:include",
+    "description": "Test string inclusion",
+    "body": "expect('$1').to include('$0')"
+  },
+  "Rspec String include (inline)": {
+    "prefix": "rspec-string-inline:include",
+    "description": "Test string inclusion",
+    "body": "it { is_expected.to include($0) }"
+  },
+
+  "Rspec String starts with": {
+    "prefix": "rspec-string:start_with",
+    "description": "Test string starts with",
+    "body": "expect('$1').to start_with('$0')"
+  },
+  "Rspec String starts with (inline)": {
+    "prefix": "rspec-string-inline:start_with",
+    "description": "Test string starts with",
+    "body": "it { is_expected.to start_with($0) }"
+  },
+
+  "Rspec String ends with": {
+    "prefix": "rspec-string:end_with",
+    "description": "Test string ends with",
+    "body": "expect('$0').to end_with('$1')"
+  },
+  "Rspec String ends with (inline)": {
+    "prefix": "rspec-string-inline:end_with",
+    "description": "Test string ends with",
+    "body": "it { is_expected.to end_with($0) }"
+  },
+
+  "Rspec String match regx": {
+    "prefix": "rspec-string:match",
+    "description": "Test string match regx",
+    "body": "expect('$1').to match /$0/"
+  },
+  "Rspec String match regx (inline)": {
+    "prefix": "rspec-string-inline:match",
+    "description": "Test string match regx",
+    "body": "it { is_expected.to match(/$0/) }"
+  },
+
+  "Rspec Array include": {
+    "prefix": "rspec-array:include",
+    "description": "Test array inclusion",
+    "body": "expect([$1, $2]).to include($3, $0)"
+  },
+  "Rspec Array include (inline)": {
+    "prefix": "rspec-array-inline:include",
+    "description": "Test array inclusion",
+    "body": "it { is_expected.to include($1, $0) }"
+  },
+  
+  "Rspec Array contain_exactly": {
+    "prefix": "rspec-array:contain_exactly",
+    "description": "Test array contain_exactly",
+    "body": "expect([$1, $2]).to contain_exactly($3, $0)"
+  },
+  "Rspec Array contain_exactly (inline)": {
+    "prefix": "rspec-array-inline:contain_exactly",
+    "description": "Test array contain_exactly",
+    "body": "it { is_expected.to contain_exactly($1, $0) }"
+  },
+
+  "Rspec Hash include": {
+    "prefix": "rspec-hash:include",
+    "description": "Test hash inclusion",
+    "body": "it { is_expected.to include($1, $0) }"
+  },
+  "Rspec Hash include (inline)": {
+    "prefix": "rspec-hash-inline:include",
+    "description": "Test hash inclusion",
+    "body": "expect({ $1: $2, $3: $4 }).to include($5: $0)"
+  },
+
+  "Rspec Numeric": {
+    "prefix": "rspec-numeric",
+    "description": "Test numeric variable",
+    "body": "expect($1).to be >= $0"
+  },
+  "Rspec Numeric (inline)": {
+    "prefix": "rspec-numeric-inline",
+    "description": "Test numeric variable",
+    "body": "it { is_expected.to be >= $0 }"
+  },
+
+  "Rspec Numeric exclusive": {
+    "prefix": "rspec-numeric:exclusive",
+    "description": "Test exclusive of numeric variable",
+    "body": "expect($1).to be_between($2, $0).exclusive"
+  },
+  "Rspec Numeric exclusive (inline)": {
+    "prefix": "rspec-numeric-inline:exclusive",
+    "description": "Test exclusive of numeric variable",
+    "body": "it { is_expected.to be_between($2, $0).exclusive }"
+  },
+
+  "Rspec Numeric inclusive": {
+    "prefix": "rspec-numeric:inclusive",
+    "description": "Test inclusive of numeric variable",
+    "body": "expect($1).to be_between($2, $0).inclusive"
+  },
+  "Rspec Numeric inclusive (inline)": {
+    "prefix": "rspec-numeric-inline:inclusive",
+    "description": "Test inclusive of numeric variable",
+    "body": "it { is_expected.to be_between($2, $0).inclusive }"
+  },
+
+  "Rspec Numeric be_within": {
+    "prefix": "rspec-numeric:be_within",
+    "description": "Test be_within of numeric variable",
+    "body": "expect($1).to be_within($2).of($0)"
+  },
+  "Rspec Numeric be_within (inline)": {
+    "prefix": "rspec-numeric-inline:be_within",
+    "description": "Test be_within of numeric variable",
+    "body": "it { is_expected.to be_within($2).of($0) }"
+  },
+
+  "Rspec Errors full": {
+    "prefix": "rspec-exception:full",
+    "description": "Test exception with message and type",
+    "body": "expect { $1 }.to raise_error(${2:ZeroDivisionError}, '$0')"
+  },
+  "Rspec Errors full (inline)": {
+    "prefix": "rspec-exception-inline:full",
+    "description": "Test exception with message and type",
+    "body": "it { is_expected.to raise_error(${2:ZeroDivisionError}, '$0') }"
+  },
+
+  "Rspec Errors message only": {
+    "prefix": "rspec-exception:message-only",
+    "description": "Test exception with message only",
+    "body": "expect { $1 }.to raise_error($0')"
+  },
+  "Rspec Errors message only (inline)": {
+    "prefix": "rspec-exception-inline:message-only",
+    "description": "Test exception with message only",
+    "body": "it { is_expected.to raise_error($0') }"
+  },
+
+  "Rspec Errors object": {
+    "prefix": "rspec-exception:object",
+    "description": "Test exception with message type only",
+    "body": "expect { $1 }.to raise_error(${2:ZeroDivisionError})"
+  },
+  "Rspec Errors object (inline)": {
+    "prefix": "rspec-exception-inline:object",
+    "description": "Test exception with message type only",
+    "body": "it { is_expected.to raise_error(${2:ZeroDivisionError}) }"
+  }
+}
