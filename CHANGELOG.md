@@ -32,3 +32,7 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 - added hash matchers
 - added array matchers
 - added exception matchers
+
+## [0.0.5]
+
+- updated some descriptions
