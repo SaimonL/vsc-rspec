@@ -1,4 +1,30 @@
 {
+  "allow_value": {
+    "prefix": "rspec-allow_value",
+    "description": "tests usage of allow_value",
+    "body": "it { is_expected.${1:not_}to allow_value${2:s}(${3:value(s)}).for(:${4:attribute}) }"
+  },
+
+  "allow_value with qualifiers": {
+    "prefix": "rspec-allow_value-qualifiers",
+    "description": "tests usage of allow_value with qualifiers",
+    "body": [
+      "it do",
+        "\tis_expected.${1:not_}to allow_value${2:s}(${3:value(s)})",
+          "\t\t.for(:${4:attribute})${5:",
+          "\t\t.on(:${6:create})}${7:",
+          "\t\t.with_message(:${8:message}${9:, against: :${10:attribute}})}${11:",
+          "\t\t.ignoring_interference_by_writer}",
+      "end"
+    ]
+  },
+
+  "have_secure_password": {
+    "prefix": "rspec-have_secure_password",
+    "description": "tests usage of have_secure_password",
+    "body": "it { is_expected.to have_secure_password }",
+  },
+
   "validate_absence_of": {
     "prefix": "rspec-validate_absence_of",
     "description": "tests usage of validates_absence_of",
@@ -64,9 +90,4 @@
     "description": "tests usage of validates_presence_of",
     "body": "it { is_expected.to validate_presence_of(:$0).allow_nil }"
   },
-  "validate_uniqueness_of": {
-    "prefix": "rspec-validate_uniqueness_of",
-    "description": "tests usage of validate_uniqueness_of",
-    "body": "it { is_expected.to validate_uniqueness_of(:$1).scoped_to(:$2).ignoring_case_sensitivity.allow_nil }"
-  }
 }

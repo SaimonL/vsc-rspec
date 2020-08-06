@@ -43,19 +43,27 @@ A simple rspec snippets to make life easier.
 
 #### Active Model
 
+`rspec-allow_value` : Test usage of `allow_value` inline
+`rspec-allow_value-qualifiers` : Test usage of `allow_value` with qualifiers
+`rspec-have_secure_password` : Test usage of `have_secure_password`
 `rspec-validate_absence_of` : Test usage of validates_absence_of  
 `rspec-validate_acceptance_of` : Test usage of validates_acceptance_of  
 `rspec-validate_confirmation_of` : Test usage of validates_confirmation_of  
+`rspec-validate_exclusion_of` : Test usage of `validate_exclusion_of`
 `rspec-validate_inclusion_of` : Test usage of validates_inclusion_of  
 `rspec-validate_length_of` : Test usage of validates_length_of  
+`rspec-validate_length_of:minimum` : Test usage of `validate_length_of` inline
 `rspec-validate_numericality_of` : Test usage of validates_numericality_of  
 `rspec-validate_presence_of` : Test usage of validates_presence_of  
 
 #### Active Record
 
+`rspec-accepts_nested_attributes_for` : Tests usage of `accepts_nested_attributes_for` inline
+`rspec-accepts_nested_attributes_for-qualifiers` : Tests usage of `accepts_nested_attributes_for` with qualifiers
 `rspec-belongs_to` : Test usage of belongs_to  
 `rspec-has_many` : Test usage of has_many  
 `rspec-have_one` : Test usage of have_one  
+`rspec-validate_uniqueness_of` : Tests usage of `validate_uniqueness_of`
 
 #### Controller & Route
 

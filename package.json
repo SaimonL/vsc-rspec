@@ -30,6 +30,10 @@
 			},
 			{
 				"language": "ruby",
+				"path": "./snippets/rspec-sm-ar.code-snippets"
+			},
+			{
+				"language": "ruby",
 				"path": "./snippets/rspec-sm-ar-belong_to.code-snippets"
 			},
 			{
