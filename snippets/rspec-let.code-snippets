@@ -18,5 +18,10 @@
     "prefix": "rspec-let-job-peform",
     "description": "Let declaration for peforming active job",
     "body": "let(:$1)\t{ described_class.peform_now($0) }"
+  },
+  "Let module": {
+    "prefix": "rspec-let-module",
+    "description": "Let allows you to test module",
+    "body": "let(:$1)\t{ Class.new { extend ${0:<module name>} } }"
   }
 }

@@ -1,0 +1,42 @@
+{
+  "Rspec String include": {
+    "prefix": "rspec-string-include",
+    "description": "Test string inclusion",
+    "body": "expect('$1').to include('$0')"
+  },
+  "Rspec String include (inline)": {
+    "prefix": "rspec-string-inline-include",
+    "description": "Test string inclusion",
+    "body": "it { is_expected.to include($0) }"
+  },
+  "Rspec String starts with": {
+    "prefix": "rspec-string-start_with",
+    "description": "Test string starts with",
+    "body": "expect('$1').to start_with('$0')"
+  },
+  "Rspec String starts with (inline)": {
+    "prefix": "rspec-string-inline-start_with",
+    "description": "Test string starts with",
+    "body": "it { is_expected.to start_with($0) }"
+  },
+  "Rspec String ends with": {
+    "prefix": "rspec-string-end_with",
+    "description": "Test string ends with",
+    "body": "expect('$0').to end_with('$1')"
+  },
+  "Rspec String ends with (inline)": {
+    "prefix": "rspec-string-inline:end_with",
+    "description": "Test string ends with",
+    "body": "it { is_expected.to end_with($0) }"
+  },
+  "Rspec String match regx": {
+    "prefix": "rspec-string-match",
+    "description": "Test string match regx",
+    "body": "expect('$1').to match /$0/"
+  },
+  "Rspec String match regx (inline)": {
+    "prefix": "rspec-string-inline-match",
+    "description": "Test string match regx",
+    "body": "it { is_expected.to match(/$0/) }"
+  },
+}

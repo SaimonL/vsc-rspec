@@ -25,6 +25,7 @@ A simple rspec snippets to make life easier.
 * `rspec-let-instance-double` : Let declaration of instance double
 * `rspec-let-class-double` : Let declaration of class double
 * `rspec-let-job-peform` : Let declaration that triggers the ActiveJob
+* `rspec-let-module` : Let you test methods in module by calling them directly
 
 ### Matchers
 
