@@ -1,4 +1,4 @@
-# VSC Rspec
+# Rspec snippets for Ruby and Rais
 
 A simple rspec snippets to make life easier.
 
