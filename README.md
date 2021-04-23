@@ -4,8 +4,6 @@ A simple rspec snippets to make life easier.
 
 **Enjoy!**
 
-<br />
-
 ### New file/context/blocks
 
 * `rspec-new-rails-file` : Rails standard new spec file template.
