@@ -4,10 +4,9 @@ A simple rspec snippets to make life easier.
 
 **Enjoy!**
 
+<br />
 
-
-
-### New file/blocks
+### New file/context/blocks
 
 * `rspec-new-rails-file` : Rails standard new spec file template.
 * `rspec-new-file` : New spec file template.
@@ -30,7 +29,6 @@ A simple rspec snippets to make life easier.
 * `rspec-hash` : Test Hash
 * `rspec-numeric` : Test Numbers
 * `rspec-exception` : Test Exceptions
-
 
 ### Mock
 
@@ -82,6 +80,7 @@ A simple rspec snippets to make life easier.
 * `rspec-respond-with` : Test http status code
 * `rspec-check-session` : Test session
 
+<br />
 
 ## Release Notes
 

@@ -4,10 +4,10 @@
       "description": "Rspec expectition with mock return",
       "body": [
         "expect($1)",
-        "  .to receive(:$2)",
-        "  .at_least(:once)",
-        "  .with(${4:no_args})",
-        "  .and_return($0)"
+        "\t.to receive(:$2)",
+        "\t.at_least(:once)",
+        "\t.with(${4:no_args})",
+        "\t.and_return($0)"
       ]
     },
     "Expectation with mock and returns short" : {
@@ -15,9 +15,9 @@
       "description": "Rspec expectition with mock return short",
       "body": [
         "expect($1)",
-        "  .to receive(:$2)",
-        "  .at_least(:once)",
-        "  .and_return($0)"
+        "\t.to receive(:$2)",
+        "\t.at_least(:once)",
+        "\t.and_return($0)"
       ]
     },
     "Expectation exception with mock" : {
@@ -25,9 +25,9 @@
       "description": "Rspec expectition with mock exception return",
       "body": [
         "expect($1)",
-        "  .to receive(:$2)",
-        "  .at_least(:once)",
-        "  .and_raise(StandardError.new('$0'))"
+        "\t.to receive(:$2)",
+        "\t.at_least(:once)",
+        "\t.and_raise(StandardError.new('$0'))"
       ]
     },
     "Expectation exception" : {
@@ -35,9 +35,21 @@
       "description": "Rspec expectition",
       "body": [
         "expect($1)",
-        "  .to receive(:$2)",
-        "  .at_least(:once)",
-        "  .with($0)"
+        "\t.to receive(:$2)",
+        "\t.at_least(:once)",
+        "\t.with($0)"
+      ]
+    },
+    "Mock Rails.logger to check for message": {
+      "prefix": "rspec-mock-rails-logger",
+      "description": "Mock Rails.logger to check for specific message message (rubocop safe)",
+      "body": [
+        "before { allow(Rails.logger).to receive(${1::warn}) }",
+        "",
+        "it '$2' do",
+        "\t${3:your test code goes here}",
+        "\texpect(Rails.logger).to have_received(${4::warn}).with(/$0/)",
+        "end"
       ]
     }
 }
