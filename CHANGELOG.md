@@ -2,7 +2,7 @@
 
 All notable changes to the "vsc-rspec" extension will be documented in this file.
 
-## [0.1.0]
+## [0.1.1]
 
 - bug fixes (thanks to halilim)
 - improve Shoulda matchers (thanks to halilim)
