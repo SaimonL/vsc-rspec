@@ -104,47 +104,6 @@
     "description": "One liner it that uses subject",
     "body": "it { is_expected.to $0 }"
   },
-  "Expectation with mock and returns" : {
-    "prefix": "rspec-expect:mock-return",
-    "description": "Rspec expectition with mock return",
-    "body": [
-      "expect($1)",
-      "  .to receive(:$2)",
-      "  .at_least(:once)",
-      "  .with(${4:no_args})",
-      "  .and_return($0)"
-    ]
-  },
-  "Expectation with mock and returns short" : {
-    "prefix": "rspec-expect:mock-return-short",
-    "description": "Rspec expectition with mock return short",
-    "body": [
-      "expect($1)",
-      "  .to receive(:$2)",
-      "  .at_least(:once)",
-      "  .and_return($0)"
-    ]
-  },
-  "Expectation exception with mock" : {
-    "prefix": "rspec-expect:mock-exception-return",
-    "description": "Rspec expectition with mock exception return",
-    "body": [
-      "expect($1)",
-      "  .to receive(:$2)",
-      "  .at_least(:once)",
-      "  .and_raise(StandardError.new('$0'))"
-    ]
-  },
-  "Expectation exception" : {
-    "prefix": "rspec-expect:mock",
-    "description": "Rspec expectition",
-    "body": [
-      "expect($1)",
-      "  .to receive(:$2)",
-      "  .at_least(:once)",
-      "  .with($0)"
-    ]
-  },
   "expect execution inline": {
     "prefix": "rspec-expect:execution-inline",
     "description": "Rspec expect execution inline expect { }.to",

@@ -2,25 +2,16 @@
 
 All notable changes to the "vsc-rspec" extension will be documented in this file.
 
-## [0.0.1]
+## [0.0.6]
 
-- rspec-core
-- rspec-its
+- bug fixes (thanks to halilim)
+- improve Shoulda matchers (thanks to halilim)
+- added mock
+- organize readme.md
 
-## [0.0.2]
+## [0.0.5]
 
-- refactor
-- update documents
-- change mapping
-- added belongs_to
-- added rspec context
-
-## [0.0.3]
-
-- added has_many
-- added have_one
-- file name fix
-- added expectation return raise mock
+- updated some descriptions
 
 ## [0.0.4]
 
@@ -33,6 +24,28 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 - added array matchers
 - added exception matchers
 
-## [0.0.5]
+## [0.0.3]
 
-- updated some descriptions
+- added has_many
+- added have_one
+- file name fix
+- added expectation return raise mock
+
+## [0.0.2]
+
+- refactor
+- update documents
+- change mapping
+- added belongs_to
+- added rspec context
+
+## [0.0.1]
+
+- rspec-core
+- rspec-its
+
+<br />
+
+# Contributers
+
+* [halilim](https://github.com/halilim)
