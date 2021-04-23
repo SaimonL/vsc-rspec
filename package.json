@@ -63,6 +63,18 @@
 			{
 				"language": "ruby",
 				"path": "/snippets/rspec-mock.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "/snippets/rspec-active-job.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "/snippets/rspec-let.code-snippets"
+			},
+			{
+				"language": "ruby",
+				"path": "/snippets/rspec-boolean.code-snippets"
 			}
 		]
 	},

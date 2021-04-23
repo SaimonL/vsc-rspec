@@ -1,0 +1,22 @@
+{
+  "Rspec boolean be_truthy": {
+    "prefix": "rspec-truthy",
+    "description": "Rspec boolean be_truthy",
+    "body": "be_truthy"
+  },
+  "Rspec check boolean for be_truthy in inline": {
+    "prefix": "rspec-truthy-subject",
+    "description": "Rspec check boolean for be_truthy in inline",
+    "body": "it { is_expected.to be_truthy }"
+  },
+  "Rspec boolean be_falsy": {
+    "prefix": "rspec-falsy",
+    "description": "Rspec boolean be_falsy",
+    "body": "be_falsy"
+  },
+  "Rspec check boolean for be_falsy in inline": {
+    "prefix": "rspec-falsy-subject",
+    "description": "Rspec check boolean for be_falsy in inline",
+    "body": "it { is_expected.to be_falsy }"
+  }
+}

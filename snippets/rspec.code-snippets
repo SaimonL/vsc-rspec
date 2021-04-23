@@ -115,20 +115,5 @@
     "body": [
       "expect($1).to receive(:$0)",
     ]
-  },
-  "Let": {
-    "prefix": "rspec-let",
-    "description": "Let declaration",
-    "body": "let(:$1) { $0 }"
-  },
-  "be_truthy": {
-    "prefix": "rspec-truthy",
-    "description": "be_truthy",
-    "body": "be_truthy"
-  },
-  "be_falsy": {
-    "prefix": "rspec-falsy",
-    "description": "be_falsy",
-    "body": "be_falsy"
   }
 }

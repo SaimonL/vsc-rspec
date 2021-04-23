@@ -1,0 +1,22 @@
+{
+  "Let": {
+    "prefix": "rspec-let",
+    "description": "Let declaration",
+    "body": "let(:$1)\t{ $0 }"
+  },
+  "Let instance double": {
+    "prefix": "rspec-let-instance-double",
+    "description": "Let declaration for instance double",
+    "body": "let(:$1)\t{ instance_double($0) }"
+  },
+  "Let class double": {
+    "prefix": "rspec-let-class-double",
+    "description": "Let declaration for class double",
+    "body": "let(:$1)\t{ class_double($0) }"
+  },
+  "Let job peform": {
+    "prefix": "rspec-let-job-peform",
+    "description": "Let declaration for peforming active job",
+    "body": "let(:$1)\t{ described_class.peform_now($0) }"
+  }
+}

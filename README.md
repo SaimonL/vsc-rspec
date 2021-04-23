@@ -18,24 +18,41 @@ A simple rspec snippets to make life easier.
 * `rspec-it-block` : Rspec it block
 * `rspec-it_behaves_like` : it_behaves_like shared examples
 * `rspec-it-inline` : One liner it that uses subject
-* `rspec-let` : Let declaration.
+
+### Let declares
+
+* `rspec-let` : Let declaration
+* `rspec-let-instance-double` : Let declaration of instance double
+* `rspec-let-class-double` : Let declaration of class double
+* `rspec-let-job-peform` : Let declaration that triggers the ActiveJob
 
 ### Matchers
 
-* `rspec-truthy` : be_truthy shortcut
-* `rspec-falsy` : be_falsy shortcut
 * `rspec-string` : Test string
 * `rspec-array` : Test Array
 * `rspec-hash` : Test Hash
 * `rspec-numeric` : Test Numbers
 * `rspec-exception` : Test Exceptions
 
-### Mock
+### Boolean
 
-* `rspec-expect:mock-return` : Rspec expectition with mock.
-* `rspec-expect:mock` : Rspec expectition.
+* `rspec-truthy` : be_truthy shortcut
+* `rspec-truthy-subject` : Inline test using subject
+* `rspec-falsy` : be_falsy shortcut
+* `rspec-falsy-subject` : Inline test using subject
+
+### Mock/Stub/Allow
+
+* `rspec-expect:mock-return` : Rspec expectition with mock
+* `rspec-expect:mock` : Rspec expectition
 * `rspec-expect:execution-inline` : Rspec expect execution inline with "expect {}.to"
-* `rspec-expect:mock-minimum` : Rspec expectition minimum.
+* `rspec-expect:mock-minimum` : Rspec expectition minimum
+* `rspec-mock-rails-logger` : Mocks Rails logger to check if a message was sent
+* `rspec-allow-receive-return` : Allow to receive and return value
+
+### Active Jobs
+
+* `rspec-job-enqueued` : Check it see if a ActiveJob was enqueued after a code is executed
 
 ## [RSPEC ITS](https://github.com/rspec/rspec-its)
 

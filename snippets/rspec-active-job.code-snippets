@@ -1,0 +1,7 @@
+{
+  "Check if a job was queued": {
+    "prefix": "rspec-job-enqueued",
+    "description": "Check it see if a ActiveJob was enqueued after a code is executed",
+    "body": "expect(${0:ExampleJob}).to have_been_enqueued"
+  }
+}

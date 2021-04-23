@@ -6,7 +6,12 @@ All notable changes to the "vsc-rspec" extension will be documented in this file
 
 - bug fixes (thanks to halilim)
 - improve Shoulda matchers (thanks to halilim)
-- added mock
+- added mock for rails logger
+- added allow to receive and return
+- added snippet for active job check
+- added snippet for let instance double
+- added snippet for let class double
+- added more boolean snippets
 - organize readme.md
 
 ## [0.0.5]
