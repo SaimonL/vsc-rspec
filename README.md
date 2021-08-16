@@ -1,4 +1,4 @@
-# Rspec snippets for Ruby and Rais
+# Rspec snippets for Ruby and Rails
 
 A simple rspec snippets to make life easier.
 

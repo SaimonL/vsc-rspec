@@ -1,6 +1,6 @@
 {
 	"name": "vsc-rspec",
-	"displayName": "Rspec snippets for Ruby and Rais",
+	"displayName": "Rspec snippets for Ruby and Rails",
 	"description": "Rspec snippets from rspec core, rspec-its, shoulda-matchers and more on the way.",
 	"version": "0.1.1",
 	"publisher": "Saimon",
