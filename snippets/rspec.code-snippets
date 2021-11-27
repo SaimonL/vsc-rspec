@@ -1,4 +1,20 @@
 {
+  "New Rails RSPEC clean file": {
+    "prefix": "rspec-new-rails-clean-file",
+    "description": "Rails new rspec clean file with less codes",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}, type: $1 do",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
   "New Rails RSPEC file": {
     "prefix": "rspec-new-rails-file",
     "description": "Rails new rspec file",
@@ -11,6 +27,22 @@
       "\tlet(:${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g}) { described_class.new() }",
       "",
       "\tsubject { ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g} }",
+      "",
+      "\t$0",
+      "",
+      "end",
+      ""
+    ]
+  },
+  "New RSPEC clean file": {
+    "prefix": "rspec-new-clean-file",
+    "description": "New rspec clean file",
+    "body": [
+      "# frozen_string_literal: true",
+      "",
+      "require 'rails_helper'",
+      "",
+      "RSpec.describe ${TM_FILENAME_BASE/((^[a-z])|_([a-z]))/${2:/upcase}${3:/upcase}/g} do",
       "",
       "\t$0",
       "",

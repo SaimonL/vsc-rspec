@@ -2,7 +2,7 @@
 	"name": "vsc-rspec",
 	"displayName": "Rspec snippets for Ruby and Rails",
 	"description": "Rspec snippets from rspec core, rspec-its, shoulda-matchers and more on the way.",
-	"version": "0.1.1",
+	"version": "0.1.2",
 	"publisher": "Saimon",
 	"homepage": "https://github.com/SaimonL/vsc-rspec",
 	"repository": {

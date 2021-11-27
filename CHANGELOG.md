@@ -2,6 +2,10 @@
 
 All notable changes to the "vsc-rspec" extension will be documented in this file.
 
+## [0.1.2]
+
+- added rspec clean file for ruby and rails
+
 ## [0.1.1]
 
 - bug fixes (thanks to halilim)
