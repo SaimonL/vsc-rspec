@@ -25,6 +25,15 @@ A simple rspec snippets to make life easier.
 * `rspec-let-job-peform` : Let declaration that triggers the ActiveJob
 * `rspec-let-module` : Let you test methods in module by calling them directly
 
+### File Fixture
+
+* `rspec-fixture` : Declared a file fixture
+* `rspec-fixture:size` : Get the file size of fixture file
+* `rspec-fixture:read` : Read fixture file as string
+* `rspec-fixture:read-json` : Read fixture file as hash object
+* `rspec-fixture:read-json-symbolize_keys` : Read fixture file as hash object with its key symbolized
+* `rspec-fixture:read-json-array-symbolize_keys` : Read fixture file as array of hashes where the keys are symbolized
+
 ### Matchers
 
 * `rspec-string` : Test string
@@ -98,15 +107,6 @@ A simple rspec snippets to make life easier.
 * `rspec-render-partial` : Test partial template
 * `rspec-respond-with` : Test http status code
 * `rspec-check-session` : Test session
-
-### File Fixture
-
-* `rspec-fixture` : Declared a file fixture
-* `rspec-fixture:size` : Get the file size of fixture file
-* `rspec-fixture:read` : Read fixture file as string
-* `rspec-fixture:read-json` : Read fixture file as hash object
-* `rspec-fixture:read-json-symbolize_keys` : Read fixture file as hash object with its key symbolized
-* `rspec-fixture:read-json-array-symbolize_keys` : Read fixture file as array of hashes where the keys are symbolized
 
 <br />
 
