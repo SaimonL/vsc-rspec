@@ -17,14 +17,6 @@ A simple rspec snippets to make life easier.
 * `rspec-it_behaves_like` : it_behaves_like shared examples
 * `rspec-it-inline` : One liner it that uses subject
 
-### Let declares
-
-* `rspec-let` : Let declaration
-* `rspec-let-instance-double` : Let declaration of instance double
-* `rspec-let-class-double` : Let declaration of class double
-* `rspec-let-job-peform` : Let declaration that triggers the ActiveJob
-* `rspec-let-module` : Let you test methods in module by calling them directly
-
 ### File Fixture
 
 * `rspec-fixture` : Declared a file fixture
@@ -33,6 +25,14 @@ A simple rspec snippets to make life easier.
 * `rspec-fixture:read-json` : Read fixture file as hash object
 * `rspec-fixture:read-json-symbolize_keys` : Read fixture file as hash object with its key symbolized
 * `rspec-fixture:read-json-array-symbolize_keys` : Read fixture file as array of hashes where the keys are symbolized
+
+### Let Declares
+
+* `rspec-let` : Let declaration
+* `rspec-let-instance-double` : Let declaration of instance double
+* `rspec-let-class-double` : Let declaration of class double
+* `rspec-let-job-peform` : Let declaration that triggers the ActiveJob
+* `rspec-let-module` : Let you test methods in module by calling them directly
 
 ### Matchers
 
