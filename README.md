@@ -47,7 +47,10 @@ A simple rspec snippets to make life easier.
 * `rspec-expect:execution-inline` : Rspec expect execution inline with "expect {}.to"
 * `rspec-expect:mock-minimum` : Rspec expectition minimum
 * `rspec-mock-rails-logger` : Mocks Rails logger to check if a message was sent
+* `rspec-instance-double` : Declare instance double
+* `rspec-instance-double-new`: Initialize instance double
 * `rspec-allow-receive-return` : Allow to receive and return value
+* `rspec-allow-receive-with-and-return` : Allow to receive with param and return value
 
 ### Active Jobs
 
@@ -95,6 +98,15 @@ A simple rspec snippets to make life easier.
 * `rspec-render-partial` : Test partial template
 * `rspec-respond-with` : Test http status code
 * `rspec-check-session` : Test session
+
+### File Fixture
+
+* `rspec-fixture` : Declared a file fixture
+* `rspec-fixture:size` : Get the file size of fixture file
+* `rspec-fixture:read` : Read fixture file as string
+* `rspec-fixture:read-json` : Read fixture file as hash object
+* `rspec-fixture:read-json-symbolize_keys` : Read fixture file as hash object with its key symbolized
+* `rspec-fixture:read-json-array-symbolize_keys` : Read fixture file as array of hashes where the keys are symbolized
 
 <br />
 

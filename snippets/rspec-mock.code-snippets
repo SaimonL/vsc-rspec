@@ -52,9 +52,24 @@
       "end"
     ]
   },
+  "Let instance double": {
+    "prefix": "rspec-instance-double",
+    "description": "Declare instanec double",
+    "body": "let(:$1) { instance_double($0) }"
+  },
+  "Instance double new": {
+    "prefix": "rspec-instance-double-new",
+    "description": "Initialize instance double",
+    "body": "allow($1).to receive(:new).with($2).and_return($0)"
+  },
   "Allow recieve and return": {
     "prefix": "rspec-allow-receive-return",
     "description": "Use allow to receive and return value",
     "body": "allow($1).to receive($2).and_return($0)"
+  },
+  "Allow recieve with and return": {
+    "prefix": "rspec-allow-receive-with-and-return",
+    "description": "Use allow to receive with param and return value",
+    "body": "allow($1).to receive($2).with($3).and_return($0)"
   }
 }

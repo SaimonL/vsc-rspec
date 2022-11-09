@@ -2,6 +2,19 @@
 
 All notable changes to the "vsc-rspec" extension will be documented in this file.
 
+## [0.1.3]
+
+- added rspec instance-double
+- added rspec instance-double new
+- added rspec allow-receive-with-and-return
+
+- added declared a file fixture
+- added get the file size of fixture file
+- added read fixture file as string
+- added read fixture file as hash object
+- added read fixture file as hash object with its key symbolized
+- added read fixture file as array of hashes where the keys are symbolized
+
 ## [0.1.2]
 
 - added rspec clean file for ruby and rails

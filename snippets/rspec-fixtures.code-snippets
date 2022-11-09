@@ -1,0 +1,32 @@
+{
+  "Fixture declare": {
+    "prefix": "rspec-fixture",
+    "description": "declare file fixture object",
+    "body": "let(:$1) { file_fixture('$0') }"
+  },
+  "Fixture get file size": {
+    "prefix": "rspec-fixture:size",
+    "description": "get file size",
+    "body": "let(:$1) { file_fixture('$0').size }"
+  },
+  "Fixture read file content": {
+    "prefix": "rspec-fixture:read",
+    "description": "declare fixture and read data",
+    "body": "let(:$1) { file_fixture('$0').read }"
+  },
+  "Fixture read JSON file": {
+    "prefix": "rspec-fixture:read-json",
+    "description": "declare fixture and read JSON data",
+    "body": "let(:$1) { JSON.parse(file_fixture('$0').read) }"
+  },
+  "Fixture read JSON file symbolized keys": {
+    "prefix": "rspec-fixture:read-json-symbolize_keys",
+    "description": "declare fixture and read JSON data then symbolize_keys",
+    "body": "let(:$1) { JSON.parse(file_fixture('$0').read).deep_symbolize_keys }"
+  },
+  "Fixture read JSON array file symbolized keys": {
+    "prefix": "rspec-fixture:read-json-array-symbolize_keys",
+    "description": "declare fixture and read Arrays of JSON data then symbolize_keys",
+    "body": "let(:$1) { JSON.parse(file_fixture('$0').read).map(&:deep_symbolize_keys) }"
+  }
+}
