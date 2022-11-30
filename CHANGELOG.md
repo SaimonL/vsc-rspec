@@ -2,6 +2,11 @@
 
 All notable changes to the "vsc-rspec" extension will be documented in this file.
 
+## [0.2.0]
+
+- following new standard where the "." is at the end of the list
+- shulda matcher only accepts "should" instead of "expect"
+
 ## [0.1.3]
 
 - added rspec instance-double

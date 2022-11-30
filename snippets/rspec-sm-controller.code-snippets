@@ -4,31 +4,30 @@
     "description": "tests controller permit",
     "body": [
       "it do",
-      "  is_expected",
-      "    .to permit(:$1)",
-      "    .for(:create, params: params)",
-      "    .on(:$0)",
+      "  should permit(:$1).",
+      "    for(:create, params: params)",
+      "    on(:$0)",
       "end"
     ]
   },
   "Controller redirect": {
     "prefix": "rspec-redirect",
     "description": "test controller redirect",
-    "body": "it { is_expected.to redirect_to(posts_path) }"
+    "body": "it { should redirect_to(posts_path) }"
   },
   "Controller render template": {
     "prefix": "rspec-render-template",
     "description": "test controller render template",
-    "body": "it { is_expected.to render_template('show') }"
+    "body": "it { should render_template('show') }"
   },
   "Controller render partial": {
     "prefix": "rspec-render-partial",
     "description": "test controller render partial",
-    "body": "it { is_expected.to render_template(partial: '_post') }"
+    "body": "it { should render_template(partial: '_post') }"
   },
   "Controller respond with": {
     "prefix": "rspec-respond-with",
     "description": "test controller respond with",
-    "body": "it { is_expected.to respond_with(:ok) }"
-  } 
+    "body": "it { should respond_with(:ok) }"
+  }
 }

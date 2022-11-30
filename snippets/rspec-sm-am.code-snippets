@@ -4,90 +4,119 @@
     "description": "tests usage of allow_value",
     "body": "it { is_expected.${1:not_}to allow_value${2:s}(${3:value(s)}).for(:${4:attribute}) }"
   },
-
   "allow_value with qualifiers": {
     "prefix": "rspec-allow_value-qualifiers",
     "description": "tests usage of allow_value with qualifiers",
     "body": [
       "it do",
-        "\tis_expected.${1:not_}to allow_value${2:s}(${3:value(s)})",
-          "\t\t.for(:${4:attribute})${5:",
-          "\t\t.on(:${6:create})}${7:",
-          "\t\t.with_message(:${8:message}${9:, against: :${10:attribute}})}${11:",
-          "\t\t.ignoring_interference_by_writer}",
+      "\tis_expected.${1:not_}to allow_value${2:s}(${3:value(s)})",
+      "\t\t.for(:${4:attribute})${5:",
+      "\t\t.on(:${6:create})}${7:",
+      "\t\t.with_message(:${8:message}${9:, against: :${10:attribute}})}${11:",
+      "\t\t.ignoring_interference_by_writer}",
       "end"
     ]
   },
-
   "have_secure_password": {
     "prefix": "rspec-have_secure_password",
     "description": "tests usage of have_secure_password",
     "body": "it { is_expected.to have_secure_password }",
   },
-
   "validate_absence_of": {
     "prefix": "rspec-validate_absence_of",
     "description": "tests usage of validates_absence_of",
-    "body": "it { is_expected.to validate_absence_of(:$0) }"
+    "body": "it { should validate_absence_of(:$0) }"
   },
   "validate_acceptance_of": {
     "prefix": "rspec-validate_acceptance_of",
     "description": "tests usage of validates_acceptance_of",
-    "body": "it { is_expected.to validate_acceptance_of(:$0) }"
+    "body": "it { should validate_acceptance_of(:$0) }"
+  },
+  "validate_acceptance_of:message": {
+    "prefix": "rspec-validate_acceptance_of:messahe",
+    "description": "tests usage of validates_acceptance_of with message",
+    "body": "it { should validate_acceptance_of(:$1).with_message('$0') }"
   },
   "validate_confirmation_of": {
     "prefix": "rspec-validate_confirmation_of",
     "description": "tests usage of validates_confirmation_of",
-    "body": "it { is_expected.to validate_confirmation_of(:$0) }"
+    "body": "it { should validate_confirmation_of(:$0) }"
+  },
+  "validate_confirmation_of:messahe": {
+    "prefix": "rspec-validate_confirmation_of:message",
+    "description": "tests usage of validates_confirmation_of with message",
+    "body": "it { should validate_confirmation_of(:$1).with_message('$0') }"
   },
   "validate_exclusion_of": {
     "prefix": "rspec-validate_exclusion_of",
     "description": "tests usage of validates_exclusion_of",
-    "body": "it { is_expected.to validate_exclusion_of(:$0) }"
+    "body": "it { should validate_exclusion_of(:$0) }"
+  },
+  "validate_exclusion_of:all": {
+    "prefix": "rspec-validate_exclusion_of:all",
+    "description": "tests usage of validates_exclusion_of:all",
+    "body": [
+      "it do",
+      "  should validate_exclusion_of(:$1).",
+      "  in_array([$2]).",
+      "  with_message('$0')",
+      "end"
+    ]
   },
   "validate_inclusion_of": {
     "prefix": "rspec-validate_inclusion_of",
     "description": "tests usage of validates_inclusion_of",
-    "body": "it { is_expected.to validate_inclusion_of(:$0) }"
+    "body": "it { should validate_inclusion_of(:$0) }"
+  },
+  "validate_inclusion_of:all": {
+    "prefix": "rspec-validate_inclusion_of:all",
+    "description": "tests usage of validates_inclusion_of all",
+    "body": [
+      "it do",
+      "  should validate_inclusion_of(:$1).",
+      "  in_array([$2]).",
+      "  with_message('$0')",
+      "end"
+    ]
   },
   "validate_length_of": {
     "prefix": "rspec-validate_length_of",
     "description": "tests usage of validates_length_of",
     "body": [
       "it do",
-      "  is_expected.to validate_length_of(:$1)",
-      "    .is_at_least($2)",
-      "    .is_at_most($3)",
-      "    .is_equal_to($0)",
+      "  should validate_length_of(:$1).",
+      "    is_at_least($2).",
+      "    is_at_most($3).",
+      "    is_equal_to($0)",
       "end"
     ]
   },
   "validate_length_of:minimum": {
     "prefix": "rspec-validate_length_of:minimum",
     "description": "tests usage of validates_length_of",
-    "body": "it { is_expected.to validate_length_of(:$1).is_at_least($2).is_at_most($0) }"
+    "body": "it { should validate_length_of(:$1).is_at_least($2).is_at_most($0) }"
   },
   "validate_numericality_of": {
     "prefix": "rspec-validate_numericality_of",
     "description": "tests usage of validates_numericality_of",
     "body": [
       "it do",
-      "  is_expected.to validate_numericality_of(:$1)",
-      "    .only_integer",
-      "    .is_less_than($2)",
-      "    .is_less_than_or_equal_to($4)",
-      "    .is_equal_to($5)",
-      "    .is_greater_than_or_equal_to($6)",
-      "    .is_greater_than($0)",
-      "    .even",
-      "    .odd",
-      "    .allow_nil",
+      "  should validate_numericality_of(:$1).",
+      "    only_integer.",
+      "    is_less_than($2).",
+      "    is_less_than_or_equal_to($4).",
+      "    is_equal_to($5).",
+      "    is_greater_than_or_equal_to($6).",
+      "    is_greater_than($0).",
+      "    even.",
+      "    odd.",
+      "    allow_nil",
       "end"
     ]
   },
   "validate_presence_of": {
     "prefix": "rspec-validate_presence_of",
     "description": "tests usage of validates_presence_of",
-    "body": "it { is_expected.to validate_presence_of(:$0).allow_nil }"
+    "body": "it { should validate_presence_of(:$0).allow_nil }"
   },
 }

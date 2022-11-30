@@ -2,16 +2,16 @@
   "route get": {
     "prefix": "rspec-route:get-show-action",
     "description": "test route get with action, and id",
-    "body": "it { expect route(:get, '$1').to(action: :$2, id: $0) }"
+    "body": "it { should route(:get, '$1').to(action: :$2, id: $0) }"
   },
   "route get with controller": {
     "prefix": "rspec-route:get-show-action-controller",
     "description": "test route get with action, and controler",
-    "body": "it { expect route(:get, '$1').to(controller: :$2, action: :$3) }"
+    "body": "it { should route(:get, '$1').to(controller: :$2, action: :$3) }"
   },
   "route get with port": {
     "prefix": "rspec-route:get-show-port",
     "description": "test route get with port",
-    "body": "it { expect route(:get, '$1', port: $2).to('$3#$0') }"
+    "body": "it { should route(:get, '$1', port: $2).to('$3#$0') }"
   }
 }

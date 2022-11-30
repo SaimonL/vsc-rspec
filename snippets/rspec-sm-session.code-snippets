@@ -2,16 +2,16 @@
   "check session string": {
     "prefix": "rspec-check-session:string",
     "description": "test session string",
-    "body": "it { expect set_session.to('$0') }"
+    "body": "it { should set_session.to('$0') }"
   },
   "check session by regx": {
     "prefix": "rspec-check-session:regx",
     "description": "test session by regx",
-    "body": "it { expect set_session.to(/$0/) }"
+    "body": "it { should set_session.to(/$0/) }"
   },
   "check session by hash": {
     "prefix": "rspec-check-session:hash",
     "description": "test session by hash",
-    "body": "it { expect set_session[:$1].to('$0') }"
+    "body": "it { should set_session[:$1].to('$0') }"
   }
 }

@@ -1,43 +1,43 @@
 {
-  "Expectation with mock and returns" : {
-      "prefix": "rspec-expect:mock-return",
-      "description": "Rspec expectition with mock return",
-      "body": [
-        "expect($1)",
-        "\t.to receive(:$2)",
-        "\t.at_least(:once)",
-        "\t.with(${4:no_args})",
-        "\t.and_return($0)"
-      ]
+  "Expectation with mock and returns": {
+    "prefix": "rspec-expect:mock-return",
+    "description": "Rspec expectition with mock return",
+    "body": [
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\twith(${4:no_args}).",
+      "\tand_return($0)"
+    ]
   },
-  "Expectation with mock and returns short" : {
+  "Expectation with mock and returns short": {
     "prefix": "rspec-expect:mock-return-short",
     "description": "Rspec expectition with mock return short",
     "body": [
-      "expect($1)",
-      "\t.to receive(:$2)",
-      "\t.at_least(:once)",
-      "\t.and_return($0)"
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\tand_return($0)"
     ]
   },
-  "Expectation exception with mock" : {
+  "Expectation exception with mock": {
     "prefix": "rspec-expect:mock-exception-return",
     "description": "Rspec expectition with mock exception return",
     "body": [
-      "expect($1)",
-      "\t.to receive(:$2)",
-      "\t.at_least(:once)",
-      "\t.and_raise(StandardError.new('$0'))"
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\tand_raise(StandardError.new('$0'))"
     ]
   },
-  "Expectation exception" : {
+  "Expectation exception": {
     "prefix": "rspec-expect:mock",
     "description": "Rspec expectition",
     "body": [
-      "expect($1)",
-      "\t.to receive(:$2)",
-      "\t.at_least(:once)",
-      "\t.with($0)"
+      "expect($1).",
+      "\tto receive(:$2).",
+      "\tat_least(:once).",
+      "\twith($0)"
     ]
   },
   "Mock Rails.logger to check for message": {

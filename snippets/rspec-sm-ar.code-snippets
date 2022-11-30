@@ -2,25 +2,23 @@
   "accepts_nested_attributes_for": {
     "prefix": "rspec-accepts_nested_attributes_for",
     "description": "tests usage of accepts_nested_attributes_for",
-    "body": "it { is_expected.to accept_nested_attributes_for(:${1:attr_name(s)}) }",
+    "body": "it { should accept_nested_attributes_for(:${1:attr_name(s)}) }",
   },
-
   "accepts_nested_attributes_for with qualifiers": {
     "prefix": "rspec-accepts_nested_attributes_for-qualifiers",
     "description": "tests usage of accepts_nested_attributes_for with qualifiers",
     "body": [
       "it do",
-        "\tis_expected.to accept_nested_attributes_for(:${1:attr_name(s)})${2:",
-          "\t\t.allow_destroy(${3:true})}${4:",
-          "\t\t.limit(${5:n})}${6:",
-          "\t\t.update_only(${7:true})}",
+      "\tshould accept_nested_attributes_for(:${1:attr_name(s)})${2:",
+      "\t\t.allow_destroy(${3:true})}${4:",
+      "\t\t.limit(${5:n})}${6:",
+      "\t\t.update_only(${7:true})}",
       "end"
     ],
   },
-
   "validate_uniqueness_of": {
     "prefix": "rspec-validate_uniqueness_of",
     "description": "tests usage of validate_uniqueness_of",
-    "body": "it { is_expected.to validate_uniqueness_of(:$1).scoped_to(:$2).ignoring_case_sensitivity.allow_nil }"
+    "body": "it { should validate_uniqueness_of(:$1).scoped_to(:$2).ignoring_case_sensitivity.allow_nil }"
   }
 }

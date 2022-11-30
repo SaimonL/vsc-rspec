@@ -2,46 +2,46 @@
   "has_many": {
     "prefix": "rspec-has_many",
     "description": "tests usage for have_many",
-    "body": "it { is_expected.to have_many(:$0) }"
+    "body": "it { should have_many(:$0) }"
   },
   "has_many conditions": {
     "prefix": "rspec-has_many:conditions",
     "description": "tests usage for have_many with conditions",
-    "body": "it { is_expected.to have_many(:$1).conditions($2: '$0') }"
+    "body": "it { should have_many(:$1).conditions($2: '$0') }"
   },
   "has_many class_name": {
     "prefix": "rspec-has_many:class_name",
     "description": "tests usage for have_many with class name",
-    "body": "it { is_expected.to have_many(:$1).class_name('$0') }"
+    "body": "it { should have_many(:$1).class_name('$0') }"
   },
   "has_many with_primary_key": {
     "prefix": "rspec-has_many:with_primary_key",
     "description": "tests usage for have_many with with_primary_key",
-    "body": "it { is_expected.to have_many(:$1).with_primary_key('$0') }"
+    "body": "it { should have_many(:$1).with_primary_key('$0') }"
   },
   "has_many with_foreign_key": {
     "prefix": "rspec-has_many:with_foreign_key",
     "description": "tests usage for have_many with with_foreign_key",
-    "body": "it { is_expected.to have_many(:$1).with_foreign_key('$0') }"
+    "body": "it { should have_many(:$1).with_foreign_key('$0') }"
   },
   "has_many dependent": {
     "prefix": "rspec-has_many:dependent",
     "description": "tests usage for have_many with dependent",
-    "body": "it { is_expected.to have_many(:$1).dependent(${0::destroy}') }"
+    "body": "it { should have_many(:$1).dependent(${0::destroy}') }"
   },
   "has_many through": {
     "prefix": "rspec-has_many:through",
     "description": "tests usage for have_many with through",
-    "body": "it { is_expected.to have_many(:$1).through(:$0) }"
+    "body": "it { should have_many(:$1).through(:$0) }"
   },
   "has_many through, source": {
     "prefix": "rspec-has_many:through-source",
     "description": "tests usage for have_many with through and source",
-    "body": "it { is_expected.to have_many(:$1).through(:$2).source(:$0) }"
+    "body": "it { should have_many(:$1).through(:$2).source(:$0) }"
   },
   "has_many inverse_of": {
     "prefix": "rspec-has_many:inverse_of",
     "description": "tests usage for have_many with inverse_of",
-    "body": "it { is_expected.to have_many(:$1).inverse_of(:$0) }"
+    "body": "it { should have_many(:$1).inverse_of(:$0) }"
   }
 }

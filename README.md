@@ -4,7 +4,7 @@ A simple rspec snippets to make life easier.
 
 **Enjoy!**
 
-### New file/context/blocks
+### Context and Blocks
 
 * `rspec-new-rails-file` : Rails standard new spec file template.
 * `rspec-new-file` : New spec file template.
